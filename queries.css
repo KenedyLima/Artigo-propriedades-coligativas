@@ -1,0 +1,26 @@
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .related-articles-container {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .experimento-video {
+    height: 25rem;
+  }
+
+  .relatorio {
+    padding-left: 0;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  section {
+    padding-left: 0;
+  }
+}

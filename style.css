@@ -55,6 +55,12 @@ section {
   padding-left: 3.2rem;
 }
 
+footer {
+  background-color: #0f766e;
+  width: 100vw;
+  height: 2rem;
+}
+
 /* CLASSES' STYLES */
 
 /* HEADER SECTION */
@@ -126,7 +132,7 @@ section {
 }
 
 .experimento {
-  margin-bottom: 3.2rem;
+  margin-bottom: 5.8rem;
 }
 
 .experimento-video {
