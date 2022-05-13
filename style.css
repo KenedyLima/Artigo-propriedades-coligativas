@@ -46,7 +46,6 @@ h3 {
 }
 
 p {
-  width: 80%;
   font-size: 1.8rem;
   font-weight: 400;
   margin-bottom: 1.2rem;
@@ -69,12 +68,23 @@ section {
   margin-bottom: 5rem;
 }
 
+.top-header::after {
+  content: "";
+  height: 10rem;
+  width: 100vw;
+  background-color: #0e6a63;
+  position: absolute;
+  border-radius: 200% 200% 0 0;
+}
+
 .website-name {
   font-weight: 700;
   font-size: 4.8rem;
   margin: 0;
   color: #e5e5e5;
   letter-spacing: 1;
+  z-index: 1;
+  font-style: italic;
 }
 
 .article-title {
@@ -82,6 +92,17 @@ section {
   display: inline-block;
   padding-top: 0.6rem;
   margin-bottom: 3.2rem;
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.breadcrumb span {
+  color: #3f918b;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 /* RELATORIO SECTION*/
@@ -170,8 +191,10 @@ section {
 /* RELATED ARTICLES */
 
 .related-articles-title {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 0px;
 }
 
 .related-articles-container {
@@ -184,16 +207,19 @@ section {
   width: 70%;
   display: flex;
   padding: 2.4rem;
+
+  align-items: center;
 }
 
 .related-articles-article-title:visited,
 .related-articles-article-title:link {
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #44403c;
   margin-bottom: 1.6rem;
   border-bottom: transparent solid 2px;
   transition: 0.2s;
+  display: inline-block;
 }
 
 .related-articles-article-title:hover,
